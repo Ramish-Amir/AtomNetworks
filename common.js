@@ -8,7 +8,7 @@ function openMenu() {
 
 function closeMenu() {
     console.log('menu close')
-    navLinks.style.right = "-250px";
+    navLinks.style.right = "-100vw";
 }
 
 window.onscroll = function () {
