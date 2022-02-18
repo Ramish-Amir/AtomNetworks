@@ -1,0 +1,21 @@
+.hero-container {
+    background:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/proceeda-hero-image.jpg') center center no-repeat;
+
+}
+
+.card {
+    width: 30%;
+    border: 0px solid;
+    margin-bottom: 30px !important;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        width: calc(100% - 20px);
+        /* border: 0px solid; */
+    }
+}

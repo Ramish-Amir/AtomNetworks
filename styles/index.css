@@ -130,6 +130,7 @@ body {
     align-items: center;
     margin-top: 45px;
     color: #fff;
+    background: none;
 }
 
 .item-container span {
@@ -143,6 +144,7 @@ body {
     align-items: center;
     padding: 30px;
     width: 50%;
+    background: none;
 }
 
 .right-item {
@@ -152,6 +154,8 @@ body {
     align-items: center;
     padding: 30px;
     width: 50%;
+    background: none;
+
 }
 
 /* .right1 {
@@ -176,7 +180,6 @@ body {
     font-weight: 900;
     user-select: text;
     /* font-family: 'Creepster', cursive; */
-
     font-style: italic;
     text-shadow: 0 0 20px #43A6C6;
     /* -webkit-text-stroke: rgba(227, 105, 68, 1) 1px; */
@@ -316,7 +319,7 @@ body {
     background-color: rgba(128, 128, 128, 0.1);
 }
 
-.card {
+/* .card {
     border-radius: 15px !important;
     min-height: 415px;
     transition: 0.3s;
@@ -325,7 +328,6 @@ body {
 
 .card:hover {
     transform: scale(1.02);
-    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); */
     transition: 0.3s;
 }
 
@@ -349,15 +351,12 @@ body {
 
 .card-title {
     margin: 0;
-    /* margin: 15px 0; */
     padding: 15px;
     border-bottom: 3px solid rgba(227, 105, 68, 1);
     color: rgba(227, 105, 68, 1);
     font-size: 30px;
     border-radius: 15px 15px 0 0;
-    /* background: linear-gradient(to right, rgba(43,42,48,0.8),rgba(43,42,48,0.8),rgba(59, 108, 166, 1)); */
     background: linear-gradient(to right, rgba(59, 108, 166, 1), rgba(59, 108, 166, 0.8));
-    /* background: linear-gradient(to right, #0F2027,#203A43,#2C5364); */
     color: #fff;
 }
 
@@ -390,7 +389,6 @@ h4.card-title {
     border: 8px solid rgba(43, 42, 48, 0.5);
     background: rgba(43, 42, 48, 0.2);
     color: rgba(227, 105, 68, 1);
-    /* text-shadow: 0 0 10px #43A6C6; */
     font-size: 20px;
     font-weight: 500;
     box-shadow: inset 0 0 10px rgba(43, 42, 48, 0.5);
@@ -404,7 +402,6 @@ h4.card-title {
 
 .card-price {
     color: rgba(59, 108, 166, 1);
-    /* text-align: right; */
     font-size: 20px;
 }
 
@@ -448,7 +445,7 @@ button {
 button:focus {
     outline: none;
     transition: 0.3s;
-}
+} */
 
 .home-ad-container {
     background: rgba(227, 105, 68, 1);
@@ -458,7 +455,7 @@ button:focus {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    background: linear-gradient(to right, rgba(0,0,0, 0.5),rgba(227, 105, 68, 1)), url(./assets/house.jpg) no-repeat center left;
+    background: linear-gradient(to right, rgba(0,0,0, 0.5),rgba(227, 105, 68, 1)), url(../assets/house.jpg) no-repeat center left;
     /* background-size: 60vw; */
     background-size: cover;
     padding: 50px;
@@ -509,7 +506,7 @@ button:focus {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background: linear-gradient(to right, rgba(59, 108, 166, 1),rgba(0,0,0, 0.5)), url(./assets/business.jpg) no-repeat center right;
+    background: linear-gradient(to right, rgba(59, 108, 166, 1),rgba(0,0,0, 0.5)), url(../assets/business.jpg) no-repeat center right;
     /* background-size: 60vw; */
     background-size: cover;
     padding: 50px;
@@ -604,7 +601,7 @@ button:focus {
     text-align: center;
 }
 
-.contact-section {
+/* .contact-section {
     background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)), url(./assets/bg-banner.jpg) no-repeat center center;
     background-size: cover;
 }
@@ -655,12 +652,13 @@ button:focus {
 .contact-form>input:focus, .contact-form>textarea:focus {
     background-color: aliceblue;
     transition: 0.3s;
-}
+} */
 
 
 
 @media only screen and (max-width: 768px) {
-    .nav-bar {
+
+   .nav-bar {
         padding: 5px 20px;
         width: calc(100%);
     }
@@ -810,12 +808,12 @@ button:focus {
         flex-direction: column;
     }
 
-    .contact-container {
+    /* .contact-container {
         flex-direction: column;
     }
 
     .contact-left, .contact-right {
         width: 100%;
-    }
+    } */
 
 }
