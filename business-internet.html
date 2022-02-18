@@ -42,13 +42,28 @@
             <i id="menuBars" class="fas fa-bars" onclick="openMenu()"></i>
             <div class="nav-links" id="navLinks">
                 <i class="fas fa-times" onclick="closeMenu()"></i>
-                <span class="nav-item"><a href="home-internet.html">Home</a></span>
-                <span class="nav-item"><a href="home-internet.html">Business</a></span>
+                <span class="nav-item"><a href="#">Home</a>
+                    <div class="nav-dropdown">
+                        <div class="nav-dropdown-content">
+                            <a href="home-internet.html">Internet</a>
+                            <a href="#">VoIP</a>
+                        </div>
+                    </div>
+                </span>
+                <span class="nav-item"><a href="#">Business</a>
+                    <div class="nav-dropdown">
+                        <div class="nav-dropdown-content">
+                            <a href="business-internet.html">Internet</a>
+                            <a href="#">VoIP</a>
+                            <a href="#">Switchboard in the Cloud</a>
+                        </div>
+                    </div></span>
                 <span class="nav-item"><a href="home-internet.html">Corporate</a></span>
                 <span class="nav-item"><a href="home-internet.html">Wholesale | PA</a></span>
             </div>
         </div>
     </nav>
+
 
     <section class="hero-container">
         <div>
@@ -186,19 +201,30 @@
     <section class="accordions-container">
         <h1>At home, at work, in the city, in the country side</h1>
 
-        <span class="accordion">WHERE YOU WANT</span>
+        <span class="accordion">
+            <div><i class="fa-solid fa-angles-right"></i> WHERE YOU WANT</div>
+            <i class="fa-solid fa-chevron-down"></i>
+        </span>
         <div class="panel">
-            <p>Double installation and the possibility of moving the internet connection to the house you are living in
-                at that time.</p>
-            <p>Excellent solution for those who have two houses who live permanently according to the season or
-                holidays.</p>
-            <h3>Single monthly fee, single bill</h3>
+            <div class="panel-content">
+                <p>Double installation and the possibility of moving the internet connection to the house you are living
+                    in
+                    at that time.</p>
+                <p>Excellent solution for those who have two houses who live permanently according to the season or
+                    holidays.</p>
+                <h3>Single monthly fee, single bill</h3>
+            </div>
         </div>
 
-        <span class="accordion">WHEN YOU WANT</span>
+        <span class="accordion">
+            <div><i class="fa-solid fa-angles-right"></i> WHEN YOU WANT</div>
+            <i class="fa-solid fa-chevron-down"></i>
+        </span>
         <div class="panel">
-            <p>Possibility of having internet at home or in the company for short periods.</p>
-            <h3>You pay only WHEN you want to activate it, without a subscription.</h3>
+            <div class="panel-content">
+                <p>Possibility of having internet at home or in the company for short periods.</p>
+                <h3>You pay only WHEN you want to activate it, without a subscription.</h3>
+            </div>
         </div>
 
     </section>

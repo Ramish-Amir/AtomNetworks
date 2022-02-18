@@ -53,8 +53,22 @@
             <i id="menuBars" class="fas fa-bars" onclick="openMenu()"></i>
             <div class="nav-links" id="navLinks">
                 <i class="fas fa-times" onclick="closeMenu()"></i>
-                <span class="nav-item"><a href="home-internet.html">Home</a></span>
-                <span class="nav-item"><a href="business-internet.html">Business</a></span>
+                <span class="nav-item"><a href="#">Home</a>
+                    <div class="nav-dropdown">
+                        <div class="nav-dropdown-content">
+                            <a href="home-internet.html">Internet</a>
+                            <a href="#">VoIP</a>
+                        </div>
+                    </div>
+                </span>
+                <span class="nav-item"><a href="#">Business</a>
+                    <div class="nav-dropdown">
+                        <div class="nav-dropdown-content">
+                            <a href="business-internet.html">Internet</a>
+                            <a href="#">VoIP</a>
+                            <a href="#">Switchboard in the Cloud</a>
+                        </div>
+                    </div></span>
                 <span class="nav-item"><a href="home-internet.html">Corporate</a></span>
                 <span class="nav-item"><a href="home-internet.html">Wholesale | PA</a></span>
             </div>
@@ -459,7 +473,7 @@
                                                         1 GB
                                                     </div>
                                                     <div class="upload">
-                                                         - 
+                                                        -
                                                     </div>
                                                 </div>
                                                 <div class="card-price"><b><span>€ </span>26.90 per month</b>

@@ -27,7 +27,7 @@ body {
     overflow-x: hidden;
 }
 
-.nav-bar {
+/* .nav-bar {
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -42,7 +42,6 @@ body {
 }
 
 .nav-item {
-    /* padding: 5px 20px; */
     margin: 5px 20px;
     text-decoration: none;
     border-bottom: rgba(255, 255, 255, 0) 2px solid;
@@ -68,7 +67,6 @@ body {
 
 .nav-item:hover {
     color: rgb(59, 108, 166);
-    /* border-bottom: rgba(255, 255, 255, 1) 2px solid; */
     transition: 0.5s;
     text-decoration: none;
 
@@ -87,12 +85,11 @@ body {
 
 .nav-links-colored>.nav-item:hover {
     background-color: aliceblue;
-    /* border-bottom: rgb(59, 108, 166) 2px solid; */
 }
 
 .nav-bar i.fas {
     display: none;
-}
+} */
 
 .video-container {
     position: absolute;
@@ -658,7 +655,15 @@ button:focus {
 
 @media only screen and (max-width: 768px) {
 
-   .nav-bar {
+    .hero-section {
+        height: max-content;
+    }
+
+    .bgVideo {
+        width: max-content;
+        overflow: hidden;
+    }
+/*    .nav-bar {
         padding: 5px 20px;
         width: calc(100%);
     }
@@ -722,7 +727,7 @@ button:focus {
     .nav-bar i.fas.fa-bars {
         padding: 0;
         color: rgb(59, 108, 166);
-    }
+    } */
 
     .item-container {
         flex-direction: column-reverse;
