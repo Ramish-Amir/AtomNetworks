@@ -1,0 +1,21 @@
+.hero-container {
+    background:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('../assets/corporate.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.corporate-body {
+    padding: 50px 30px;
+}
+
+.c-heading {
+    background: rgba(59, 108, 166, 1);
+    border-radius: 8px;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+.corporate-body > p {
+    font-size: 18px;
+    color: gray;
+    padding: 0 10px;
+}
