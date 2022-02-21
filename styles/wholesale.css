@@ -45,6 +45,23 @@
     font-size: 30px;
     font-weight: 500;
     text-align: center;
+    width: 100%;
+    border-radius: 5px;
+    transition: 0.2s;
+
+}
+
+.item-header:hover {
+    font-size: 33px;
+    transition: 0.2s;
+}
+
+.orange-item > .item-header {
+    background-color: rgba(227, 105, 68, 0.1);
+}
+
+.blue-item > .item-header {
+    background: rgba(59, 108, 166, 0.1);
 }
 
 .item-content {

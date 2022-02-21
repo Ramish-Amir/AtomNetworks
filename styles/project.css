@@ -1,0 +1,41 @@
+.nav-bar {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links a {
+    color: rgba(0, 0, 0, 1);
+}
+
+.card-price {
+    color: rgba(59, 108, 166, 1);
+    font-size: 30px;
+}
+
+.card-price span {
+    font-size: 90px;
+}
+
+.card-text {
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .nav-links a {
+        color: #fff;
+    }
+
+    .card-price {
+        color: rgba(59, 108, 166, 1);
+        font-size: 20px;
+    }
+    
+    .card-price span {
+        font-size: 70px;
+    }
+    
+    .card-text {
+        font-size: 15px;
+    }
+}

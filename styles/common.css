@@ -76,12 +76,13 @@ body {
 .nav-dropdown-content > a {
     width: 100%;
     text-align: center;
-    border-bottom: 1px solid gray;
     font-size: 15px;
     transition: 0.3s;
     min-width: max-content;
     text-decoration: none;
+    padding: 5px 10px;
     color: rgb(59, 108, 166);
+    border-radius: 8px;
 }
 
 .nav-item:hover .nav-dropdown {
@@ -94,6 +95,7 @@ body {
     text-decoration: none;
     transform: scale(1.1);
     transition: 0.3s;
+    background: rgb(59, 108, 166,0.2);
 }
 
 .nav-item>a {
@@ -265,7 +267,6 @@ h4.card-title {
     justify-content: space-evenly;
     padding: 10px 0;
     transition: 0.3s;
-
 }
 
 .download:hover, .upload:hover {
@@ -340,6 +341,81 @@ button {
 button:focus {
     outline: none;
     transition: 0.3s;
+}
+
+.project-container {
+    margin-top: 90px;
+    padding: 100px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    min-height: 400px;
+    transition: 0.5s;
+}
+
+.project-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../assets//homeProjects.jpg") center center;
+    background-size: cover;
+    border-radius: 15px 0 0 15px;
+    width: 50%;
+    transition: 0.5s;
+}
+
+.project-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+
+}
+
+.project-title > h1 {
+    font-size: 50px;
+    font-weight: 700;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.project-card:hover  .project-title {
+    background: rgba(0, 0, 0, 0.6);
+    transition: 0.5s;
+}   
+
+.project-card:hover  .project-title > h1 {
+    font-size: 55px;
+    opacity: 1;
+    color: #fff;
+    transition: 0.5s;
+}
+
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 30px;
+}
+
+.project-type {
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background: rgba(59, 108, 166, 0.2);
+    color: rgba(59, 108, 166, 1);
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
 }
 
 .accordions-container {
@@ -536,6 +612,34 @@ button:focus {
     .nav-bar i.fas.fa-bars {
         padding: 0;
         color: rgb(59, 108, 166);
+    }
+
+    .project-container {
+        padding: 70px 30px;
+    }
+    
+    .project-card {
+        flex-direction: column;
+    }
+    
+    .project-header {
+        border-radius: 15px 15px 0 0;
+        width: 100%;
+        min-height: 200px;
+    }
+
+    .project-title {
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .project-title > h1 {
+        opacity: 1;
+        color: #fff;
+    }
+    
+    .project-content {
+        width: 100%;
     }
 
     .accordions-container {
