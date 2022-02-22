@@ -20,6 +20,35 @@
     font-size: 25px;
 }
 
+.all-projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 50px;
+}
+
+.all-projects>a:hover {
+    text-decoration: none;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.all-projects>a {
+    text-align: center;
+    border-radius: 10px;
+    background: rgba(227, 105, 68, 0.2);
+    color: rgba(227, 105, 68, 1);
+    width: 48%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    border: 2px solid rgba(227, 105, 68, 1);
+    transition: 0.3s;
+}
+
+
+
 @media only screen and (max-width: 768px) {
     .nav-links a {
         color: #fff;
@@ -36,5 +65,16 @@
     
     .card-text {
         font-size: 15px;
+    }
+
+    .all-projects {
+        flex-direction: column;
+        padding: 30px;
+
+    }
+
+    .all-projects>a {
+        width: 100%;
+        margin-bottom: 10px;
     }
 }
