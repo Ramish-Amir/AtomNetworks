@@ -1,9 +1,115 @@
 .hero-container {
-    background:  linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url('../assets/voip_home.jpg') center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url('../assets/voip_home.jpg') center center no-repeat;
     background-size: cover;
 }
 
-.vHome-body {
-    padding: 50px 30px;
+.project-header {
+    background: url("../assets/voipHomeProject.jpg") center center;
+    background-size: cover;
 }
 
+.voip-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.voip-content>span {
+    color: gray;
+    font-size: 30px;
+}
+
+.voip-cost {
+    font-size: 70px;
+    font-weight: 700;
+    color: rgba(59, 108, 166, 1);
+}
+
+.additional-voip {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: aliceblue;
+    padding: 50px 100px;
+}
+
+.additional-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 30px;
+    width: 45%;
+}
+
+.additional-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 8px;
+    color: rgba(227, 105, 68, 1);
+    background-color: rgba(227, 105, 68, 0.2);
+    text-align: center;
+}
+
+.extra-voip {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.extra-card {
+    border-radius: 12px;
+    width: 48%;
+    border: 1px solid rgba(59, 108, 166, 0.3);
+    text-align: center;
+}
+
+.extra-card>span {
+    font-size: 15px;
+    color: gray;
+}
+
+.extra-header {
+    background-color: rgba(59, 108, 166, 0.2);
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+    text-align: center;
+    color: rgba(59, 108, 166, 1);
+    font-weight: 500;
+}
+
+.extra-cost {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(227, 105, 68, 1);
+}
+
+@media only screen and (max-width: 768px) {
+
+    .voip-content>span {
+        font-size: 20px;
+    }
+
+    .voip-cost {
+        font-size: 45px;
+    }
+
+    .additional-voip {
+        flex-direction: column;
+        padding: 50px 30px;
+    }
+
+    .additional-card {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}

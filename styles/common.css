@@ -352,7 +352,7 @@ button:focus {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     min-height: 400px;
     transition: 0.5s;
@@ -380,6 +380,7 @@ button:focus {
 }
 
 .project-title > h1 {
+    text-align: center;
     font-size: 50px;
     font-weight: 700;
     opacity: 0;
@@ -392,7 +393,6 @@ button:focus {
 }   
 
 .project-card:hover  .project-title > h1 {
-    font-size: 55px;
     opacity: 1;
     color: #fff;
     transition: 0.5s;
