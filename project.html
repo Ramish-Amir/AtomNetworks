@@ -64,34 +64,6 @@
             </div>
         </div>
     </nav>
-<!-- 
-    <section class="project-container">
-        <div class="project-card">
-            <div style="background: url('./assets/homeProjects.jpg') center center; background-size: cover;" class="project-header">
-                <div class="project-title">
-                    <h1>ATM 10</h1>
-                </div>
-            </div>
-            <div class="project-content">
-                <div class="project-type">Home</div>
-                <div class="specs">
-                    <div class="download">
-                        10 MB
-                    </div>
-                    <div class="upload">
-                        1 MB
-                    </div>
-                </div>
-                <div class="card-price"><b><span>€ </span>18.90 per month</b></div>
-                <p class="card-text">
-                    <i class="fas fa-check-square"></i>
-                    Up to 10 Mb in Download.<br>
-                    <i class="fas fa-check-square"></i>
-                    Up to 1 Mb in Upload.
-                </p>
-            </div>
-        </div>
-    </section> -->
 
     <section class="project-container" id="projectContainer"></section>
     <section class="all-projects">
@@ -150,12 +122,12 @@
             </div>
             <div class="contact-right">
                 <form class="contact-form">
-                    <input type="text" placeholder="First name*"><br>
-                    <input type="email" placeholder="Email*"><br>
-                    <input type="text" placeholder="Phone"><br>
-                    <textarea type="text" placeholder="Message*"></textarea><br>
+                    <input id="fName" type="text" placeholder="First name*" required><br>
+                    <input id="email" type="email" placeholder="Email*" required><br>
+                    <input id="phone" type="text" placeholder="Phone"><br>
+                    <textarea id="userMessage" type="text" placeholder="Message*" required></textarea><br>
                 </form>
-                <button class="blue-btn">Send</button>
+                <button onclick="sendEmail()" class="blue-btn">Send</button>
             </div>
         </div>
         <h1>Choose Atomo Networks</h1>

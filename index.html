@@ -646,12 +646,12 @@
             </div>
             <div class="contact-right">
                 <form class="contact-form">
-                    <input type="text" placeholder="First name*"><br>
-                    <input type="email" placeholder="Email*"><br>
-                    <input type="text" placeholder="Phone"><br>
-                    <textarea type="text" placeholder="Message*"></textarea><br>
+                    <input id="fName" type="text" placeholder="First name*" required><br>
+                    <input id="email" type="email" placeholder="Email*" required><br>
+                    <input id="phone" type="text" placeholder="Phone"><br>
+                    <textarea id="userMessage" type="text" placeholder="Message*" required></textarea><br>
                 </form>
-                <button class="blue-btn">Send</button>
+                <button onclick="sendEmail()" class="blue-btn">Send</button>
             </div>
         </div>
         <h1>Choose Atomo Networks</h1>
@@ -660,8 +660,8 @@
 
 </body>
 
-
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="common.js"></script>
 <script src="index.js"></script>
-
 
 </html>
