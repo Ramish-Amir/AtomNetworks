@@ -51,10 +51,11 @@ for (i = 0; i < acc.length; i++) {
 }
 
 function createForm() {
+    const targetEmail = 'yourEmail@gmail.com'
     var currentPage = window.location.href;
     var contactForm = document.getElementById('contactFormContainer');
     contactForm.insertAdjacentHTML('beforeend',
-        `<form class="contact-form" action="https://formsubmit.co/ramishamir2750@gmail.com" method="POST">
+        `<form class="contact-form" action="https://formsubmit.co/${targetEmail}" method="POST">
     <input type="text" name="name" placeholder="Name*" required>
     <input type="email" name="email" placeholder="Email*" required>
     <input id="phone" type="text" name="phone" placeholder="Phone"><br>
