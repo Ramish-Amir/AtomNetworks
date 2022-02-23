@@ -2,12 +2,10 @@
 var navLinks = document.getElementById("navLinks");
 var myNav = document.getElementById("myNav");
 function openMenu() {
-    console.log('menu open')
     navLinks.style.right = "0";
 }
 
 function closeMenu() {
-    console.log('menu close')
     navLinks.style.right = "-100vw";
 }
 
