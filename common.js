@@ -59,6 +59,7 @@ function createForm() {
     <input type="email" name="email" placeholder="Email*" required>
     <input id="phone" type="text" name="phone" placeholder="Phone"><br>
     <input type="hidden" name="_subject" value="New submission!"><br>
+    <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_next" value="${currentPage}">
     <textarea name="textarea" required placeholder="Your Message" ></textarea>
     <button  class="blue-btn" type="submit">Send</button>
