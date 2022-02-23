@@ -50,27 +50,19 @@ for (i = 0; i < acc.length; i++) {
     });
 }
 
-function sendEmail() {
-    const fName = document.getElementById('fName').value;
-    const email = document.getElementById('email').value;
-    const phone = document.getElementById('phone').value;
-    const msg = document.getElementById('userMessage').value;
-
-    if (fName === null || fName === '' || email === null || email === '' || msg === '' || msg === null) {
-        alert("Kindly fill all the required fields!")
-    }
-    else {
-        Email.send({
-            SecureToken: 'dummy_secure_token',
-            To: 'dummyEmail@gmail.com',
-            From: email,
-            Subject: "User Enquiry",
-            Body: "Name: " + fName
-                + "<br> Email: " + email
-                + "<br> Phone no: " + phone
-                + "<br> Message: " + msg
-        }).then(
-            message => alert(message)
-        );
-    }
+function createForm() {
+    var currentPage = window.location.href;
+    var contactForm = document.getElementById('contactFormContainer');
+    contactForm.insertAdjacentHTML('beforeend',
+        `<form class="contact-form" action="https://formsubmit.co/ramishamir2750@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Name*" required>
+    <input type="email" name="email" placeholder="Email*" required>
+    <input id="phone" type="text" name="phone" placeholder="Phone"><br>
+    <input type="hidden" name="_subject" value="New submission!"><br>
+    <input type="hidden" name="_next" value="${currentPage}">
+    <textarea name="textarea" required placeholder="Your Message" ></textarea>
+    <button  class="blue-btn" type="submit">Send</button>
+</form>`)
 }
+
+createForm();
