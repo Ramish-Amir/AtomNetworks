@@ -553,6 +553,68 @@ button:focus {
     color: #fff;
 }
 
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 30px;
+    background: linear-gradient( rgba(43, 42, 48, 1), rgba(43, 42, 48, 01)), url('../assets/poly.png') center center;
+    background-size: cover;
+    color: #fff;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-col > span {
+    font-size: 20px;
+    border-bottom: 2px solid rgba(66, 183, 226, 1);
+    margin-bottom: 10px;
+    color: rgba(66, 183, 226, 1);
+}
+
+.footer-favs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-col a {
+    color: #fff;
+    transition: 0.3s;
+}
+
+.footer-col a:hover {
+    text-decoration: none;
+    color: rgba(66, 183, 226, 1);
+    transition: 0.3s;
+}
+
+.footer-favs i {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    margin: 2px ;
+    color: gray;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-favs i:hover {
+    color: #fff;
+    background: gray;
+    transition: 0.3s;
+}
+
 @media only screen and (max-width: 768px) {
     .nav-bar {
         padding: 5px 20px;
@@ -662,5 +724,14 @@ button:focus {
 
     .contact-left, .contact-right {
         width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-col {
+        align-items: center;
+        margin: 10px;
     }
 }

@@ -65,4 +65,46 @@ function createForm() {
 </form>`)
 }
 
+function createFooter() {
+    var footer = document.getElementById('pageFooter');
+    footer.insertAdjacentHTML('beforeend',
+        `<div class="footer-col">
+    <a href="./index.html"><img width="200px" src="./assets/logo-w-slide.png" alt="logo"></a>
+    MON - FRI 09:00 - 13:00 | 14:30 - 19:00 <br>
+    SAT 09:00 - 13:00 | SUN closed
+</div>
+<div class="footer-col">
+    <span><b>Services</b></span>
+    <a href="./home-internet.html">Internet for your home</a>
+    <a href="./business-internet.html">Internet for your business</a>
+    <a href="./home-voip.html">VoIP for your home</a>
+    <a href="./business-voip.html">VoIP for your business</a>
+    <a href="./switchboard.html">Switchboard in the cloud</a>
+</div>
+<div class="footer-col">
+    <span><b>Legal Information</b></span>
+    <a href="./terms-conditions">General terms and services</a>
+    <a href="./service-charter">Service charter</a>
+    <a href="./tariff-trans">Tariff transparency</a>
+    <a href="./dispute-resolution">Dispute resolution</a>
+    <a href="./privacy">Privacy and cookies</a>
+    <a href="./ehtical-code">Ethical code</a>
+    <a href="./db-facilitation">Deaf/blind facilitations</a>
+</div>
+<div class="footer-col">
+    <span><b>Contact</b></span>
+    <a href="./about">Who we are?</a>
+    <a href="./contact">Contacts</a>
+    <hr>
+    <div class="footer-favs">
+        <a href="https://www.facebook.com/AtomoNetworks/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/atomo_networks_srl/?hl=it" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCc9YpIWmZbyVL2i6ZuD1ABw" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/company/atomo-networks/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+</div>`)
+}
+
+
 createForm();
+createFooter();
