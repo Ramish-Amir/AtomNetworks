@@ -33,25 +33,6 @@ function searchOffer() {
     }
 }
 
-
-
-function createForm() {
-    const targetEmail = 'yourEmail@gmail.com'
-    var currentPage = window.location.href;
-    var contactForm = document.getElementById('contactFormContainer');
-    contactForm.insertAdjacentHTML('beforeend',
-        `<form class="contact-form" action="https://formsubmit.co/${targetEmail}" method="POST">
-    <input type="text" name="name" placeholder="Name*" required>
-    <input type="email" name="email" placeholder="Email*" required>
-    <input id="phone" type="text" name="phone" placeholder="Phone"><br>
-    <input type="hidden" name="_subject" value="New submission!"><br>
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="${currentPage}">
-    <textarea name="textarea" required placeholder="Your Message" ></textarea>
-    <button  class="blue-btn" type="submit">Send</button>
-</form>`)
-}
-
 function createAccordion() {
     var ac = document.getElementById("accordionsContainer");
 
@@ -83,6 +64,46 @@ function createAccordion() {
             </div>
         </div>`)
     }
+}
+
+function createForm() {
+    const targetEmail = 'yourEmail@gmail.com'
+    var currentPage = window.location.href;
+    var contactForm = document.getElementById('contactFormContainer');
+    contactForm.insertAdjacentHTML('beforeend',
+        `<form class="contact-form" action="https://formsubmit.co/${targetEmail}" method="POST">
+    <input type="text" name="name" placeholder="Name*" required>
+    <input type="email" name="email" placeholder="Email*" required>
+    <input id="phone" type="text" name="phone" placeholder="Phone"><br>
+    <input type="hidden" name="_subject" value="New submission!"><br>
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="${currentPage}">
+    <textarea name="textarea" required placeholder="Your Message" ></textarea>
+    <button  class="blue-btn" type="submit">Send</button>
+</form>`)
+}
+
+function createContactSection() {
+    const contactSection = document.getElementById('contactSection');
+    contactSection.insertAdjacentHTML('beforeend',
+    `<div class="contact-container">
+    <div class="contact-left">
+        <i class="fas fa-phone-alt"></i>
+        <br>
+        <h3>
+            091 748 10 23
+        </h3>
+        <h3>
+            Richiedi un preventivo e scopri quanto è facile cominciare a risparmiare
+        </h3>
+        <p>
+            I nostri consulenti e tecnici specializzati saranno sempre al tuo fianco e non dovrai più preoccuparti di manutenzione e assistenza con fatture da capogiro.
+        </p>
+    </div>
+    <div class="contact-right" id="contactFormContainer"></div>
+</div>
+<h1>Scegli Atomo Networks</h1>
+<br>`)
 }
 
 function createFooter() {
@@ -126,6 +147,7 @@ function createFooter() {
 }
 
 createAccordion();
+createContactSection();
 createForm();
 createFooter();
 

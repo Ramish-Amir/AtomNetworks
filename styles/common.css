@@ -333,6 +333,15 @@ h4.card-title {
     transition: 0.3s;
 }
 
+.card-body a {
+    text-decoration: none;
+    color: rgba(227, 105, 68, 1);
+}
+
+.card-body a:hover {
+    text-decoration: none;
+}
+
 button {
     outline: none;
     cursor: pointer;
