@@ -22,7 +22,7 @@ const home_projects = [
         ]
     },
     {
-        project_name: "ATM FIBER 100 PLUS",
+        project_name: "ATM FIBRA 100 PLUS",
         project_type: "Home",
         download: "1 GB",
         upload: "100 MB",
@@ -56,7 +56,7 @@ const home_projects = [
         ]
     },
     {
-        project_name: "ATM FIBER 100%",
+        project_name: "ATM FIBRA 100%",
         project_type: "Home",
         download: "1 GB",
         upload: "300 MB",
@@ -104,13 +104,13 @@ const business_projects = [
         ]
     },
     {
-        project_name: "ATM FIBER 100%",
+        project_name: "ATM FIBRA 100%",
         project_type: "Business",
         download: "1 GB",
         upload: "300 MB",
         price: "26.90 per month",
         properties: [
-            "Up to 1 Gb in Download of REAL FIBER.",
+            "Up to 1 Gb in Download of REAL FIBRA.",
             "300 Mb in Upload."
         ]
     },
