@@ -33,20 +33,7 @@ function searchOffer() {
     }
 }
 
-var acc = document.getElementsByClassName("accordion");
-var i;
 
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
-        this.classList.toggle("active-accordion");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-        } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-        }
-    });
-}
 
 function createForm() {
     const targetEmail = 'yourEmail@gmail.com'
@@ -63,6 +50,39 @@ function createForm() {
     <textarea name="textarea" required placeholder="Your Message" ></textarea>
     <button  class="blue-btn" type="submit">Send</button>
 </form>`)
+}
+
+function createAccordion() {
+    var ac = document.getElementById("accordionsContainer");
+
+    if (ac !== null) {
+        var ac = document.getElementById('accordionsContainer');
+        ac.insertAdjacentHTML('beforeend',
+        `<h1>A casa, a lavoro, in città, in campagna</h1>
+
+        <span class="accordion">
+            <div><i class="fa-solid fa-angles-right"></i> ATOMO DOVE VUOI</div>
+            <i class="fa-solid fa-chevron-down"></i>
+        </span>
+        <div class="panel">
+            <div class="panel-content">
+                <p>Doppia installazione e la possibilità di spostare la connessione internet nella casa che stai abitando in quel periodo.</p>
+                <p>Ottima soluzione per chi ha due case che abita stabilmente a secondo della stagione o delle ferie.Ottima soluzione per chi ha due case che abita stabilmente a secondo della stagione o delle ferie.</p>
+                <h3>Unico canone mensile, unica bolletta.</h3>
+            </div>
+        </div>
+
+        <span class="accordion">
+            <div><i class="fa-solid fa-angles-right"></i> ATOMO QUANDO VUOI</div>
+            <i class="fa-solid fa-chevron-down"></i>
+        </span>
+        <div class="panel">
+            <div class="panel-content">
+                <p>Possibilità di avere internet in casa o in azienda per brevi periodi.</p>
+                <h3>Paghi solo QUANDO vuoi attivarlo, senza abbonamento.</h3>
+            </div>
+        </div>`)
+    }
 }
 
 function createFooter() {
@@ -105,6 +125,21 @@ function createFooter() {
 </div>`)
 }
 
-
+createAccordion();
 createForm();
 createFooter();
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+        this.classList.toggle("active-accordion");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+    });
+}
