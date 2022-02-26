@@ -33,6 +33,10 @@ function searchOffer() {
     }
 }
 
+function openRouters() {
+    window.location.href = "./routers.html";
+}
+
 function createFavicons() {
     var fav = document.getElementById('favicons');
     if (fav !== null) {
@@ -64,7 +68,7 @@ function createServices() {
                 </div>
             </div>
 
-            <div class="more-card">
+            <div class="more-card" onclick="openRouters()">
                 <div class="m-card-body router">
                     <div class="m-card-content">
                         Scegli il modem più adatto alle tue esigenze.

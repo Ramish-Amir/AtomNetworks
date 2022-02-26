@@ -1,0 +1,92 @@
+.nav-bar {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links a {
+    color: rgba(0, 0, 0, 1);
+}
+
+.routers-body {
+    padding: 150px 30px;
+}
+
+.routers-body>p {
+    font-size: 18px;
+    color: gray;
+    text-align: justify;
+}
+
+.routers-table-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.router-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgba(59, 108, 166, 1);
+    width: 70%;
+    border-radius: 15px;
+}
+
+.router-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+    border-bottom: 2px solid rgba(59, 108, 166, 0.5);
+    font-size: 18px;
+    background: rgba(59, 108, 166, 0.1);
+}
+
+.router-item.head {
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    background: linear-gradient(to right, rgba(59, 108, 166, 1), rgba(59, 108, 166, 0.8));
+}
+
+.router-item.tail {
+    border: none;
+}
+
+.router-name {
+    color: rgba(227, 105, 68, 1);
+}
+
+.router-col {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-links a {
+        color: #fff;
+    }
+
+    .routers-body {
+        padding: 150px 20px;
+    }
+
+    .router-table {
+        width: 100%;
+    }
+
+    .router-item {
+        justify-content: space-between;
+    }
+
+    .router-item.head {
+        font-size: 15px;
+    }
+}
