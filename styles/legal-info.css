@@ -1,0 +1,49 @@
+.nav-bar {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links a {
+    color: rgba(0, 0, 0, 1);
+}
+
+.hero-container {
+    background: linear-gradient( rgba(59, 108, 166, 1), rgba(59, 108, 166, 0.9));
+    background-size: cover;
+}
+
+.legal-body {
+    padding: 50px 30px;
+    align-items: center;
+}
+
+.legal-item {
+    width: 70%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 10px auto;
+    border: 2px solid rgba(59, 108, 166, 0.7);
+}
+
+.legal-item:hover {
+    background-color: aliceblue;
+}
+
+.c-heading {
+    background: rgba(59, 108, 166, 1);
+    border-radius: 8px;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+.corporate-body > p {
+    font-size: 18px;
+    color: gray;
+    padding: 0 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-links a {
+        color: #fff;
+    }
+}

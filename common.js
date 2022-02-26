@@ -187,13 +187,13 @@ function createFooter() {
 </div>
 <div class="footer-col">
     <span><b>Info Legali</b></span>
-    <a href="./terms-conditions">Condizioni generali di contratto</a>
-    <a href="./service-charter">Carta dei servizi</a>
-    <a href="./tariff-trans">Trasparenza tariffaria</a>
-    <a href="./dispute-resolution">Risoluzione delle controversie</a>
-    <a href="./privacy">Privacy & Cookies</a>
-    <a href="./ehtical-code">Codice etico</a>
-    <a href="./db-facilitation">Agevolazioni non Udenti / non Vedenti</a>
+    <a href="./terms-conditions.html">Condizioni generali di contratto</a>
+    <a href="./service-charter.html">Carta dei servizi</a>
+    <a href="./tariff-trans.html">Trasparenza tariffaria</a>
+    <a href="./dispute-resolution.html">Risoluzione delle controversie</a>
+    <a href="./privacy.html">Privacy & Cookies</a>
+    <a href="./ethical-code.html">Codice etico</a>
+    <a href="./db-facilitation.html">Agevolazioni non Udenti / non Vedenti</a>
 </div>
 <div class="footer-col">
     <span><b>Contatti</b></span>
