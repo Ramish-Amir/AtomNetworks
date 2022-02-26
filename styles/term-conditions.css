@@ -13,6 +13,17 @@
     align-items: center;
 }
 
+.page-heading {
+    border-radius: 10px;
+    border: 2px solid rgba(59, 108, 166, 1);
+    width: max-content;
+    padding: 10px;
+    margin: 0 auto 20px ;
+    text-align: center;
+    color: rgba(59, 108, 166, 1);
+    background: rgba(59, 108, 166, 0.1);
+}
+
 .c-heading {
     background: rgba(59, 108, 166, 1);
     border-radius: 8px;
@@ -24,7 +35,10 @@
     font-size: 18px;
     color: gray;
     padding: 0 10px;
+    text-align: justify;
 }
+
+
 
 @media only screen and (max-width: 768px) {
     .nav-links a {
