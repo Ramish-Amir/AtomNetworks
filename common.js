@@ -33,13 +33,60 @@ function searchOffer() {
     }
 }
 
+
+function createServices() {
+    var ser = document.getElementById('moreServices');
+    if (ser !== null) {
+        ser.insertAdjacentHTML(`beforeend`,
+            `<h1>E sempre per Te</h1>
+        <div class="more-card-container">
+            <div class="more-card">
+                <div class="m-card-body assisstance">
+                    <div class="m-card-content">
+                        Un call center a te dedicato, pronto a rispondere per qualsiasi evenienza.
+                    </div>
+                </div>
+                <div class="m-card-header">
+                <i class="fa-solid fa-headphones-simple"></i>
+                    <span><b>Assistenza</b></span>
+                </div>
+            </div>
+
+            <div class="more-card">
+                <div class="m-card-body router">
+                    <div class="m-card-content">
+                        Scegli il modem più adatto alle tue esigenze.
+                    </div>
+                </div>
+                <div class="m-card-header">
+                <i class="fa-solid fa-sitemap"></i>
+                    <span><b>Router</b></span>
+                </div>
+            </div>
+
+            <div class="more-card">
+                <div class="m-card-body landline">
+                    <div class="m-card-content">
+                        Possibilità di acquistare il telefono fisso delle migliori marche al momento in uso.
+                    </div>
+                </div>
+                <div class="m-card-header">
+                <i class="fa-solid fa-phone-volume"></i>
+                    <span><b>Telefono fisso</b></span>
+                </div>
+            </div>
+        </div>`
+        )
+    }
+}
+
 function createAccordion() {
     var ac = document.getElementById("accordionsContainer");
 
     if (ac !== null) {
-        var ac = document.getElementById('accordionsContainer');
+        // var ac = document.getElementById('accordionsContainer');
         ac.insertAdjacentHTML('beforeend',
-        `<h1>A casa, a lavoro, in città, in campagna</h1>
+            `<h1>A casa, a lavoro, in città, in campagna</h1>
 
         <span class="accordion">
             <div><i class="fa-solid fa-angles-right"></i> ATOMO DOVE VUOI</div>
@@ -86,7 +133,7 @@ function createForm() {
 function createContactSection() {
     const contactSection = document.getElementById('contactSection');
     contactSection.insertAdjacentHTML('beforeend',
-    `<div class="contact-container">
+        `<div class="contact-container">
     <div class="contact-left">
         <i class="fas fa-phone-alt"></i>
         <br>
@@ -146,6 +193,7 @@ function createFooter() {
 </div>`)
 }
 
+createServices();
 createAccordion();
 createContactSection();
 createForm();
