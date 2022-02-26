@@ -1,0 +1,33 @@
+.nav-bar {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links a {
+    color: rgba(0, 0, 0, 1);
+}
+
+.legal-body {
+    margin-top: 90px;
+    padding: 50px 30px;
+    align-items: center;
+}
+
+.c-heading {
+    background: rgba(59, 108, 166, 1);
+    border-radius: 8px;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+.legal-body > p {
+    font-size: 18px;
+    color: gray;
+    padding: 0 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-links a {
+        color: #fff;
+    }
+}
