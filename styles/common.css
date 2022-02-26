@@ -24,7 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 120px;
+    top: 110px;
     right: 10px;
     /* background-color: aliceblue; */
     padding: 5px;
@@ -38,8 +38,8 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 18px;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     margin: 1px 0;    
     color: gray;
     padding: 10px;
@@ -48,12 +48,20 @@ body {
     transition: 0.3s;
     background-color: lightgray;
     color: white;
-    opacity: 0.3;
+    opacity: 0.5;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
 .favicons-container>a:hover {
+    text-decoration: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     opacity: 1;
+    transition: 0.3s;
+}
+
+.favicons-container i {
+    font-size: 20px;
 }
 
 .nav-bar {

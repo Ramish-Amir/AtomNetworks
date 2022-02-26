@@ -33,6 +33,18 @@ function searchOffer() {
     }
 }
 
+function createFavicons() {
+    var fav = document.getElementById('favicons');
+    if (fav !== null) {
+        fav.insertAdjacentHTML('beforeend',
+        `<a href="https://www.facebook.com/AtomoNetworks/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/atomo_networks_srl/?hl=it" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCc9YpIWmZbyVL2i6ZuD1ABw" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/company/atomo-networks/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>`
+        )
+    }
+}
+
 
 function createServices() {
     var ser = document.getElementById('moreServices');
@@ -193,6 +205,8 @@ function createFooter() {
 </div>`)
 }
 
+
+createFavicons();
 createServices();
 createAccordion();
 createContactSection();

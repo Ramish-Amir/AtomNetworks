@@ -1,7 +1,7 @@
 const home_projects = [
     {
         project_name: "ATM 10",
-        project_type: "Home",
+        project_type: "Casa",
         download: "10 MB",
         upload: "1 MB",
         price: "18.90 al mese",
@@ -12,7 +12,7 @@ const home_projects = [
     },
     {
         project_name: "ATM 100 R",
-        project_type: "Home",
+        project_type: "Casa",
         download: "100 MB",
         upload: "20 MB",
         price: "29.90 al mese",
@@ -23,7 +23,7 @@ const home_projects = [
     },
     {
         project_name: "ATM FIBRA 100 PLUS",
-        project_type: "Home",
+        project_type: "Casa",
         download: "1 GB",
         upload: "100 MB",
         price: "29.90 al mese",
@@ -35,7 +35,7 @@ const home_projects = [
     },
     {
         project_name: "ATM 30",
-        project_type: "Home",
+        project_type: "Casa",
         download: "30 MB",
         upload: "3 MB",
         price: "23.90 al mese",
@@ -46,7 +46,7 @@ const home_projects = [
     },
     {
         project_name: "ATM GO",
-        project_type: "Home",
+        project_type: "Casa",
         download: "1000 MB",
         upload: "300 MB",
         price: "26.90 al mese",
@@ -57,7 +57,7 @@ const home_projects = [
     },
     {
         project_name: "ATM FIBRA 100%",
-        project_type: "Home",
+        project_type: "Casa",
         download: "1 GB",
         upload: "300 MB",
         price: "23.90 al mese",
