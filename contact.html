@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+
+    <link rel="stylesheet" href="./styles/common.css" type="text/css">
+    <link rel="stylesheet" href="./styles/contact.css" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/3f054ef952.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="nav-bar" id="myNav">
+        <div class="logo-container">
+            <a href="index.html"><img src="./assets/logo.png" alt="logo"></a>
+        </div>
+        <div>
+            <i id="menuBars" class="fas fa-bars" onclick="openMenu()"></i>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="closeMenu()"></i>
+                <span class="nav-item"><a href="#">Home</a>
+                    <div class="nav-dropdown">
+                        <div class="nav-dropdown-content">
+                            <a href="home-internet.html">Internet</a>
+                            <a href="home-voip.html">VoIP</a>
+                        </div>
+                    </div>
+                </span>
+                <span class="nav-item"><a href="#">Business</a>
+                    <div class="nav-dropdown">
+                        <div class="nav-dropdown-content">
+                            <a href="business-internet.html">Internet</a>
+                            <a href="business-voip.html">VoIP</a>
+                            <a href="switchboard.html">Switchboard in the Cloud</a>
+                        </div>
+                    </div>
+                </span>
+                <span class="nav-item"><a href="corporate.html">Corporate</a></span>
+                <span class="nav-item"><a href="wholesale.html">Wholesale | PA</a></span>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="hero-container">
+        <div>
+            <h2>Contatti</h2>
+            <p>Home / Contatti</p>
+        </div>
+    </section>
+
+    <section class="contact-body">
+        <div class="contact-card">
+            <div class="contact-header">
+                <i class="fa-solid fa-location-dot"></i>
+                <h1>Indirizzo</h1>
+            </div>
+            <div class="contact-content">
+                <p><a href="https://www.google.com/maps/place/Atomo+Networks+s.r.l./@38.0535735,13.1312789,17z/data=!3m1!4b1!4m5!3m4!1s0x13198daeee4360ef:0x9f6d60ac68c820dd!8m2!3d38.0535671!4d13.1334548" target="_blank">Via Corsitti, 17
+                    90042 Borgetto (PA)</a></p>
+            </div>
+        </div>
+        <div class="contact-card">
+            <div class="contact-header">
+                <i class="fa-solid fa-mobile"></i>
+                <h1>Contatti</h1>
+            </div>
+            <div class="contact-content">
+                <span>Tel. </span><p><a href="tel:0917481023">091 748 10 23</a></p>
+                <span>Fax</span><p><a href="tel:0917482643">091 748 26 43</a></p>
+            </div>
+        </div>
+        <div class="contact-card">
+            <div class="contact-header">
+                <i class="fa-solid fa-envelope"></i>
+                <h1>Mail</h1>
+            </div>
+            <div class="contact-content">
+                <p><a href="mailto:info@atomonetworks.com">info@atomonetworks.com</a></p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="favicons-container" id="favicons"></section>
+
+    <section class="accordions-container" id="accordionsContainer"></section>
+
+    <section class="contact-section" id="contactSection"></section>
+
+    <section class="footer-container" id="pageFooter"></section>
+
+</body>
+
+<script src="common.js"></script>
+
+
+</html>

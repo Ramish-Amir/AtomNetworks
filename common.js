@@ -197,8 +197,8 @@ function createFooter() {
 </div>
 <div class="footer-col">
     <span><b>Contatti</b></span>
-    <a href="./about">CHI SIAMO?</a>
-    <a href="./contact">Contatti</a>
+    <a href="./about.html">CHI SIAMO?</a>
+    <a href="./contact.html">Contatti</a>
     <hr>
     <div class="footer-favs">
         <a href="https://www.facebook.com/AtomoNetworks/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
