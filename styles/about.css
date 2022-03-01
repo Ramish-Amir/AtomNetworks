@@ -1,0 +1,88 @@
+.hero-container {
+    background:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('../assets/whoWeAre.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.c-heading {
+    background: rgba(59, 108, 166, 1);
+    border-radius: 8px;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+.about-body > p {
+    font-size: 18px;
+    color: gray;
+    padding: 0 10px;
+}
+
+.about-body {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    padding: 50px 30px;
+    flex-wrap: wrap;
+}
+
+.about-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 30px auto;
+}
+
+.about-img1 {
+    width: 50%;
+    min-height: 500px;
+    border-radius: 15px 0 0 15px;
+    background: url('../assets/whoWeAre1.jpg') center center;
+    background-size: cover;
+}
+
+.about-img2 {
+    width: 50%;
+    min-height: 600px;
+    border-radius: 0 15px 15px 0;
+    background: url('../assets/whoWeAre3.jpg') center center;
+    background-size: cover;
+}
+
+.about-img3 {
+    width: 50%;
+    min-height: 250px;
+    border-radius: 15px 0 0 15px;
+    background: url('../assets/whoWeAre2.jpg') center center;
+    background-size: cover;
+}
+
+.about-content {
+    width: 50%;
+    padding: 20px;
+    text-align: justify;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .about-card {
+        flex-direction: column;
+    }
+
+    .about-img1, .about-img2, .about-img3 {
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+        min-height: 300px;
+    }
+
+    .about-img2 {
+        border-radius: 0 0 15px 15px;
+    }
+
+    .about-content {
+        width: 100%;
+        padding: 15px;
+    }
+}
