@@ -41,7 +41,7 @@ function createFavicons() {
     var fav = document.getElementById('favicons');
     if (fav !== null) {
         fav.insertAdjacentHTML('beforeend',
-        `<a href="https://www.facebook.com/AtomoNetworks/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            `<a href="https://www.facebook.com/AtomoNetworks/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
         <a href="https://www.instagram.com/atomo_networks_srl/?hl=it" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://www.youtube.com/channel/UCc9YpIWmZbyVL2i6ZuD1ABw" target="_blank"><i class="fa-brands fa-youtube"></i></a>
         <a href="https://www.linkedin.com/company/atomo-networks/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>`
@@ -130,20 +130,16 @@ function createAccordion() {
 }
 
 function createForm() {
-    const targetEmail = 'yourEmail@gmail.com'
-    var currentPage = window.location.href;
     var contactForm = document.getElementById('contactFormContainer');
     contactForm.insertAdjacentHTML('beforeend',
-        `<form class="contact-form" action="https://formsubmit.co/${targetEmail}" method="POST">
-    <input type="text" name="name" placeholder="Name*" required>
-    <input type="email" name="email" placeholder="Email*" required>
+        `<form class="contact-form">
+    <input type="text" id="username" placeholder="Name*" required>
+    <input type="email" name="email" id="customerEmail" placeholder="Email*" required>
     <input id="phone" type="text" name="phone" placeholder="Phone"><br>
-    <input type="hidden" name="_subject" value="New submission!"><br>
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="${currentPage}">
-    <textarea name="textarea" required placeholder="Your Message" ></textarea>
-    <button  class="blue-btn" type="submit">Send</button>
-</form>`)
+    <textarea name="textarea" id="userMessage" required placeholder="Your Message"></textarea>
+</form>
+<button class="blue-btn" onclick="sendMail()">Send</button>
+`)
 }
 
 function createContactSection() {
@@ -230,4 +226,39 @@ for (i = 0; i < acc.length; i++) {
             panel.style.maxHeight = panel.scrollHeight + "px";
         }
     });
+}
+
+function sendMail() {
+    const username = document.getElementById('username').value;
+    const userEmail = document.getElementById('customerEmail').value;
+    const phone = document.getElementById('phone').value;
+    const userMessage = document.getElementById('userMessage').value;
+
+    if (username == null || username == '' || userEmail == null || userEmail == '' || userMessage == null || userMessage == '') {
+        return
+    } else {
+        const url = 'http://localhost:3000/submit';
+        const data = {
+            custName: username,
+            custEmail: userEmail,
+            custPhone: phone,
+            custMessage: userMessage
+        }
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+            .then(res => {
+                if (res.status === 200) {
+                    alert('Form submitted successfully');
+                }
+            })
+            .catch(error => {
+                console.log(error)
+                alert('Failed to submit form. Please try again!');
+            })
+    }
 }
